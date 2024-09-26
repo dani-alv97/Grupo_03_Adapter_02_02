@@ -8,6 +8,16 @@ package ups.edu.ec.grupo_03_adapter_02_02.model;
  *
  * @author Grupo 3
  */
-public interface Temperatura {
-   public double registroTemperatura(String dispositivo, double temperatura);
+public class CelsiusAdapter {
+    
+    private double temperatura;
+
+    public void medirTemperatura(double temperatura){
+        this.temperatura = ((temperatura*1.8)+32);
+    }
+    
+    public double getTemperatura() {
+        return temperatura;
+    }
+      
 }

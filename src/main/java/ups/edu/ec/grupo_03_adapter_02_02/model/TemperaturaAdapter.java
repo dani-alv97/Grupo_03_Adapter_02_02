@@ -8,18 +8,18 @@ package ups.edu.ec.grupo_03_adapter_02_02.model;
  *
  * @author Grupo 3
  */
-public class TemperaturaAdapter implements Temperatura{
+public class TemperaturaAdapter implements ITemperatura{
 
-    private Celsius celsius = new Celsius();
-    private Fahrenheit fahrenheir = new Fahrenheit();
+    private CelsiusAdapter celsiusAdapter = new CelsiusAdapter();
+    private FahrenheitAdapter fahrenheir = new FahrenheitAdapter();
     private double temp= 0;
     
     @Override
     public double registroTemperatura(String dispositivo, double temperatura) {
         temp = 0;
         if(dispositivo.equals("Celsius")){
-            celsius.medirTemperatura(temperatura);
-            temp = celsius.getTemperatura();
+            celsiusAdapter.medirTemperatura(temperatura);
+            temp = celsiusAdapter.getTemperatura();
         }else if (dispositivo.equals("Fahrenheit")){
             fahrenheir.medirTemperatura(temperatura);
             temp = fahrenheir.getTemperatura();
