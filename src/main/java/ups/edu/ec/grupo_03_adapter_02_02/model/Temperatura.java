@@ -6,7 +6,7 @@ package ups.edu.ec.grupo_03_adapter_02_02.model;
 
 /**
  *
- * @author charl
+ * @author Grupo 3
  */
 public interface Temperatura {
    public double registroTemperatura(String dispositivo, double temperatura);

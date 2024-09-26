@@ -9,7 +9,7 @@ import ups.edu.ec.grupo_03_adapter_02_02.model.TemperaturaAdapter;
 
 /**
  *
- * @author charl
+ * @author Grupo 3
  */
 public class ControllerTemperatura {
 
