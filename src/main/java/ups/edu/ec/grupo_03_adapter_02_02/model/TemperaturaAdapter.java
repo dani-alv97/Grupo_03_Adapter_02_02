@@ -8,7 +8,7 @@ package ups.edu.ec.grupo_03_adapter_02_02.model;
  *
  * @author Grupo 3
  */
-public class TemperaturaAdapter implements ITemperatura{
+public class TemperaturaAdapter implements ITemperature{
 
     private CelsiusAdaptee celsiusAdapter = new CelsiusAdaptee();
     private FahrenheitAdaptee fahrenheir = new FahrenheitAdaptee();

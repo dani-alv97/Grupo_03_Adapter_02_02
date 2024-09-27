@@ -8,6 +8,6 @@ package ups.edu.ec.grupo_03_adapter_02_02.model;
  *
  * @author Grupo 3
  */
-public interface ITemperatura {
+public interface ITemperature {
    public double registroTemperatura(String dispositivo, double temperatura);
 }
