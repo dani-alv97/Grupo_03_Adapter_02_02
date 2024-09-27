@@ -8,15 +8,16 @@ package ups.edu.ec.grupo_03_adapter_02_02.model;
  *
  * @author Grupo 3
  */
-public class FahrenheitAdapter {
+public class CelsiusAdaptee {
     
     private double temperatura;
 
     public void medirTemperatura(double temperatura){
-        this.temperatura =  (temperatura - 32) / 1.8;
+        this.temperatura = ((temperatura*1.8)+32);
     }
     
     public double getTemperatura() {
         return temperatura;
     }
+      
 }

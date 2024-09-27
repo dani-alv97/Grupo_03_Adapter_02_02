@@ -10,8 +10,8 @@ package ups.edu.ec.grupo_03_adapter_02_02.model;
  */
 public class TemperaturaAdapter implements ITemperatura{
 
-    private CelsiusAdapter celsiusAdapter = new CelsiusAdapter();
-    private FahrenheitAdapter fahrenheir = new FahrenheitAdapter();
+    private CelsiusAdaptee celsiusAdapter = new CelsiusAdaptee();
+    private FahrenheitAdaptee fahrenheir = new FahrenheitAdaptee();
     private double temp= 0;
     
     @Override
